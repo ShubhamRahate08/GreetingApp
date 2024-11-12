@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'GreetingApp';
+  name: string = '';
+  greetingMassage: string = '';
+
+  displaygreeting() {
+    this.greetingMassage = `Hello, ${this.name} welcome!`;
+    console.log(this.name);
+  }
 }
